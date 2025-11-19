@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/sbin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /usr/sbin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ciarangaffney/Atlas/cpp
+CMAKE_SOURCE_DIR = /root/atlas/Atlas/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ciarangaffney/Atlas/cpp/build
+CMAKE_BINARY_DIR = /root/atlas/Atlas/cpp/build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/test_core.dir/depend.make
@@ -73,18 +73,18 @@ tests/CMakeFiles/test_core.dir/codegen:
 .PHONY : tests/CMakeFiles/test_core.dir/codegen
 
 tests/CMakeFiles/test_core.dir/test_core.cpp.o: tests/CMakeFiles/test_core.dir/flags.make
-tests/CMakeFiles/test_core.dir/test_core.cpp.o: /Users/ciarangaffney/Atlas/cpp/tests/test_core.cpp
+tests/CMakeFiles/test_core.dir/test_core.cpp.o: /root/atlas/Atlas/cpp/tests/test_core.cpp
 tests/CMakeFiles/test_core.dir/test_core.cpp.o: tests/CMakeFiles/test_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/test_core.dir/test_core.cpp.o"
-	cd /Users/ciarangaffney/Atlas/cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/test_core.dir/test_core.cpp.o -MF CMakeFiles/test_core.dir/test_core.cpp.o.d -o CMakeFiles/test_core.dir/test_core.cpp.o -c /Users/ciarangaffney/Atlas/cpp/tests/test_core.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/test_core.dir/test_core.cpp.o"
+	cd /root/atlas/Atlas/cpp/build/tests && /usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/test_core.dir/test_core.cpp.o -MF CMakeFiles/test_core.dir/test_core.cpp.o.d -o CMakeFiles/test_core.dir/test_core.cpp.o -c /root/atlas/Atlas/cpp/tests/test_core.cpp
 
 tests/CMakeFiles/test_core.dir/test_core.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_core.dir/test_core.cpp.i"
-	cd /Users/ciarangaffney/Atlas/cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/Atlas/cpp/tests/test_core.cpp > CMakeFiles/test_core.dir/test_core.cpp.i
+	cd /root/atlas/Atlas/cpp/build/tests && /usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/atlas/Atlas/cpp/tests/test_core.cpp > CMakeFiles/test_core.dir/test_core.cpp.i
 
 tests/CMakeFiles/test_core.dir/test_core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_core.dir/test_core.cpp.s"
-	cd /Users/ciarangaffney/Atlas/cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/Atlas/cpp/tests/test_core.cpp -o CMakeFiles/test_core.dir/test_core.cpp.s
+	cd /root/atlas/Atlas/cpp/build/tests && /usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/atlas/Atlas/cpp/tests/test_core.cpp -o CMakeFiles/test_core.dir/test_core.cpp.s
 
 # Object files for target test_core
 test_core_OBJECTS = \
@@ -95,24 +95,25 @@ test_core_EXTERNAL_OBJECTS =
 
 tests/test_core: tests/CMakeFiles/test_core.dir/test_core.cpp.o
 tests/test_core: tests/CMakeFiles/test_core.dir/build.make
+tests/test_core: tests/CMakeFiles/test_core.dir/compiler_depend.ts
 tests/test_core: lib/libgtest_main.a
 tests/test_core: libcore.a
 tests/test_core: libutils.a
 tests/test_core: lib/libgtest.a
 tests/test_core: tests/CMakeFiles/test_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_core"
-	cd /Users/ciarangaffney/Atlas/cpp/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_core.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/ciarangaffney/Atlas/cpp/build/tests && /opt/homebrew/bin/cmake -D TEST_TARGET=test_core -D TEST_EXECUTABLE=/Users/ciarangaffney/Atlas/cpp/build/tests/test_core -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/ciarangaffney/Atlas/cpp/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_core_TESTS -D CTEST_FILE=/Users/ciarangaffney/Atlas/cpp/build/tests/test_core[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /opt/homebrew/share/cmake/Modules/GoogleTestAddTests.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_core"
+	cd /root/atlas/Atlas/cpp/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_core.dir/link.txt --verbose=$(VERBOSE)
+	cd /root/atlas/Atlas/cpp/build/tests && /usr/sbin/cmake -D TEST_TARGET=test_core -D TEST_EXECUTABLE=/root/atlas/Atlas/cpp/build/tests/test_core -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/root/atlas/Atlas/cpp/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_core_TESTS -D CTEST_FILE=/root/atlas/Atlas/cpp/build/tests/test_core[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/test_core.dir/build: tests/test_core
 .PHONY : tests/CMakeFiles/test_core.dir/build
 
 tests/CMakeFiles/test_core.dir/clean:
-	cd /Users/ciarangaffney/Atlas/cpp/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/test_core.dir/cmake_clean.cmake
+	cd /root/atlas/Atlas/cpp/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/test_core.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/test_core.dir/clean
 
 tests/CMakeFiles/test_core.dir/depend:
-	cd /Users/ciarangaffney/Atlas/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ciarangaffney/Atlas/cpp /Users/ciarangaffney/Atlas/cpp/tests /Users/ciarangaffney/Atlas/cpp/build /Users/ciarangaffney/Atlas/cpp/build/tests /Users/ciarangaffney/Atlas/cpp/build/tests/CMakeFiles/test_core.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/atlas/Atlas/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/atlas/Atlas/cpp /root/atlas/Atlas/cpp/tests /root/atlas/Atlas/cpp/build /root/atlas/Atlas/cpp/build/tests /root/atlas/Atlas/cpp/build/tests/CMakeFiles/test_core.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : tests/CMakeFiles/test_core.dir/depend
 

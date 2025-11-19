@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Utils library
 add_library(utils
     src/Statistics.cpp
+    src/FileLoader.cpp
 )
 target_include_directories(utils PUBLIC include)
 

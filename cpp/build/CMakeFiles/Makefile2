@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/sbin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /usr/sbin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ciarangaffney/Atlas/cpp
+CMAKE_SOURCE_DIR = /root/atlas/Atlas/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ciarangaffney/Atlas/cpp/build
+CMAKE_BINARY_DIR = /root/atlas/Atlas/cpp/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -182,14 +182,14 @@ tests/clean: _deps/googletest-build/clean
 CMakeFiles/utils.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=15,16 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=15,16,17 "Built target utils"
 .PHONY : CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/utils.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/utils.dir/rule
 
 # Convenience name for target.
@@ -199,7 +199,7 @@ utils: CMakeFiles/utils.dir/rule
 # codegen rule for target.
 CMakeFiles/utils.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=15,16 "Finished codegen for target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=15,16,17 "Finished codegen for target utils"
 .PHONY : CMakeFiles/utils.dir/codegen
 
 # clean rule for target.
@@ -214,14 +214,14 @@ CMakeFiles/utils.dir/clean:
 CMakeFiles/core.dir/all: CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=3,4 "Built target core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=3,4 "Built target core"
 .PHONY : CMakeFiles/core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/core.dir/rule
 
 # Convenience name for target.
@@ -231,7 +231,7 @@ core: CMakeFiles/core.dir/rule
 # codegen rule for target.
 CMakeFiles/core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=3,4 "Finished codegen for target core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=3,4 "Finished codegen for target core"
 .PHONY : CMakeFiles/core.dir/codegen
 
 # clean rule for target.
@@ -247,14 +247,14 @@ CMakeFiles/atlas_engine.dir/all: CMakeFiles/utils.dir/all
 CMakeFiles/atlas_engine.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlas_engine.dir/build.make CMakeFiles/atlas_engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlas_engine.dir/build.make CMakeFiles/atlas_engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=1,2 "Built target atlas_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=1,2 "Built target atlas_engine"
 .PHONY : CMakeFiles/atlas_engine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/atlas_engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/atlas_engine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/atlas_engine.dir/rule
 
 # Convenience name for target.
@@ -264,7 +264,7 @@ atlas_engine: CMakeFiles/atlas_engine.dir/rule
 # codegen rule for target.
 CMakeFiles/atlas_engine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlas_engine.dir/build.make CMakeFiles/atlas_engine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=1,2 "Finished codegen for target atlas_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=1,2 "Finished codegen for target atlas_engine"
 .PHONY : CMakeFiles/atlas_engine.dir/codegen
 
 # clean rule for target.
@@ -282,14 +282,14 @@ tests/CMakeFiles/test_core.dir/all: _deps/googletest-build/googletest/CMakeFiles
 tests/CMakeFiles/test_core.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_core.dir/build.make tests/CMakeFiles/test_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_core.dir/build.make tests/CMakeFiles/test_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=13,14 "Built target test_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=13,14 "Built target test_core"
 .PHONY : tests/CMakeFiles/test_core.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_core.dir/rule
 
 # Convenience name for target.
@@ -299,7 +299,7 @@ test_core: tests/CMakeFiles/test_core.dir/rule
 # codegen rule for target.
 tests/CMakeFiles/test_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_core.dir/build.make tests/CMakeFiles/test_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=13,14 "Finished codegen for target test_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=13,14 "Finished codegen for target test_core"
 .PHONY : tests/CMakeFiles/test_core.dir/codegen
 
 # clean rule for target.
@@ -314,14 +314,14 @@ tests/CMakeFiles/test_core.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=5,6 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=5,6 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -331,7 +331,7 @@ gmock: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=5,6 "Finished codegen for target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=5,6 "Finished codegen for target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
 
 # clean rule for target.
@@ -347,14 +347,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -364,7 +364,7 @@ gmock_main: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=7,8 "Finished codegen for target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=7,8 "Finished codegen for target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
 
 # clean rule for target.
@@ -379,14 +379,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=9,10 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=9,10 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -396,7 +396,7 @@ gtest: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=9,10 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=9,10 "Finished codegen for target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.
@@ -411,14 +411,14 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/atlas/Atlas/cpp/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -428,7 +428,7 @@ gtest_main: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=11,12 "Finished codegen for target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=11,12 "Finished codegen for target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
 
 # clean rule for target.
