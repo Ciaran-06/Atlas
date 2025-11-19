@@ -7,6 +7,8 @@
 
 using recursive_directory_iterator = std::filesystem::recursive_directory_iterator;
 
+const std::string rawDataDir = "../../raw";
+
 bool pathExists(const std::string& path) {
     if (std::filesystem::exists(path)) {
         return true;
@@ -14,26 +16,30 @@ bool pathExists(const std::string& path) {
     else { throw; }
 }
 
+std::string tickerFilePath(const std::string& ticker) {
+    std::string filePath = rawDataDir + "/" + ticker + ".csv"
+}
+
 std::string tickerTrimmer(std::string& ticker) {
-    ticker.erase(0,22);
+    ticker.erase(0,15);
     ticker.erase((ticker.length() -4), ticker.length());
     return ticker;
 }
 
 // 23 chars from the start and  4 from end
 CSVLoader::CSVLoader(const std::string& path) {
-   // std::cout << system("pwd") << std::endl; : Debugging line to figure out paths
+  std::cout << system("pwd") << std::endl; //: Debugging line to figure out paths
     std::cout << "CSV Loader Inisilased..." << std::endl;
     folderPath_ = (pathExists) ? path : throw;
     std::string  tempTicker;
 
-    for (const auto& dirEntry : recursive_directory_iterator(folderPath_)) {
+   /*  for (const auto& dirEntry : recursive_directory_iterator(folderPath_)) {
         tempTicker = dirEntry.path().string();
         tempTicker = tickerTrimmer(tempTicker);
 
         std::cout << tempTicker << std::endl;
         tickers_.push_back(tempTicker);
-    }      
+    }   */    
 }
 /*
 struct Bar {
@@ -45,11 +51,11 @@ struct Bar {
     double volume;
 };
 */
-void CSVLoader::loadFile(const std::string& filename) {
-   /* for  (const auto& dirEntry : recursive_directory_iterator(folderPath_)) {
-        
-    }
-   */
-  /* filename.append
-  io::CSVReader<7> in(filename) */
+void CSVLoader::loadFile(const std::string& ticker) {
+   
+  /* io::CSVReader<7> in(filename);
+  in.read_header(io::ignore_extra_column, "Date","Open","High" "Low","Close","Adj Close","Volume");
+
+  while(in.read_row(date, open)) */
+
 }
