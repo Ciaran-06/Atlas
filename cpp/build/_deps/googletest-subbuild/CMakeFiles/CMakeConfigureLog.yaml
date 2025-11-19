@@ -20,8 +20,8 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -44,16 +44,16 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
     searched_directories:
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/uname"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/uname"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/uname"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/sbin/uname"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"

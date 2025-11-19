@@ -20,8 +20,8 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -40,17 +40,20 @@ events:
       - "/mnt/c/WINDOWS/System32/OpenSSH/"
       - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps/"
       - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
     searched_directories:
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/uname"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/uname"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/uname"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/sbin/uname"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -69,6 +72,9 @@ events:
         - "/mnt/c/WINDOWS/System32/OpenSSH/"
         - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
         - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
   -
     kind: "message-v1"
     backtrace:
@@ -97,137 +103,8 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/usr/lib/wsl/lib/"
-      - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "/mnt/c/WINDOWS/system32/"
-      - "/mnt/c/WINDOWS/"
-      - "/mnt/c/WINDOWS/System32/Wbem/"
-      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-      - "/mnt/c/WINDOWS/System32/OpenSSH/"
-      - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps/"
-      - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gmake"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gmake"
-      - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gmake"
-      - "/usr/local/sbin/gmake"
-      - "/usr/local/bin/gmake"
-      - "/usr/sbin/gmake"
-      - "/usr/bin/gmake"
-      - "/sbin/gmake"
-      - "/bin/gmake"
-      - "/usr/games/gmake"
-      - "/usr/local/games/gmake"
-      - "/usr/lib/wsl/lib/gmake"
-      - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gmake"
-      - "/mnt/c/WINDOWS/system32/gmake"
-      - "/mnt/c/WINDOWS/gmake"
-      - "/mnt/c/WINDOWS/System32/Wbem/gmake"
-      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/gmake"
-      - "/mnt/c/WINDOWS/System32/OpenSSH/gmake"
-      - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps/gmake"
-      - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin/gmake"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/make"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/make"
-      - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/make"
-      - "/usr/local/sbin/make"
-      - "/usr/local/bin/make"
-      - "/usr/sbin/make"
-      - "/usr/bin/make"
-      - "/sbin/make"
-      - "/bin/make"
-      - "/usr/games/make"
-      - "/usr/local/games/make"
-      - "/usr/lib/wsl/lib/make"
-      - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/make"
-      - "/mnt/c/WINDOWS/system32/make"
-      - "/mnt/c/WINDOWS/make"
-      - "/mnt/c/WINDOWS/System32/Wbem/make"
-      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/make"
-      - "/mnt/c/WINDOWS/System32/OpenSSH/make"
-      - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps/make"
-      - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin/make"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/smake"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/smake"
-      - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/smake"
-      - "/usr/local/sbin/smake"
-      - "/usr/local/bin/smake"
-      - "/usr/sbin/smake"
-      - "/usr/bin/smake"
-      - "/sbin/smake"
-      - "/bin/smake"
-      - "/usr/games/smake"
-      - "/usr/local/games/smake"
-      - "/usr/lib/wsl/lib/smake"
-      - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/smake"
-      - "/mnt/c/WINDOWS/system32/smake"
-      - "/mnt/c/WINDOWS/smake"
-      - "/mnt/c/WINDOWS/System32/Wbem/smake"
-      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/smake"
-      - "/mnt/c/WINDOWS/System32/OpenSSH/smake"
-      - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps/smake"
-      - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin/smake"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_MAKE_PROGRAM"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "gmake"
-      - "make"
-      - "smake"
-    candidate_directories:
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -250,8 +127,8 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
     searched_directories:
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gmake"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gmake"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gmake"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gmake"
       - "/usr/local/sbin/gmake"
       - "/usr/local/bin/gmake"
@@ -273,16 +150,16 @@ events:
       - "/usr/bin/site_perl/gmake"
       - "/usr/bin/vendor_perl/gmake"
       - "/usr/bin/core_perl/gmake"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/make"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/make"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/make"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/make"
       - "/usr/local/sbin/make"
       - "/usr/local/bin/make"
     found: "/usr/sbin/make"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -333,8 +210,8 @@ events:
       - "icx"
       - "clang++"
     candidate_directories:
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -357,16 +234,16 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
     searched_directories:
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/c++"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/c++"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/c++"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/c++"
       - "/usr/local/sbin/c++"
       - "/usr/local/bin/c++"
     found: "/usr/sbin/c++"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -415,8 +292,8 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -481,8 +358,8 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -506,8 +383,8 @@ events:
     found: "/usr/sbin/ar"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -550,8 +427,8 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -575,8 +452,8 @@ events:
     found: "/usr/sbin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -619,8 +496,8 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -644,8 +521,8 @@ events:
     found: "/usr/sbin/strip"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -688,8 +565,8 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -713,8 +590,8 @@ events:
     found: "/usr/sbin/ld"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -757,8 +634,8 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -782,8 +659,8 @@ events:
     found: "/usr/sbin/nm"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -826,8 +703,8 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -851,8 +728,8 @@ events:
     found: "/usr/sbin/objdump"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -895,8 +772,8 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -920,8 +797,8 @@ events:
     found: "/usr/sbin/objcopy"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -964,8 +841,8 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -989,8 +866,8 @@ events:
     found: "/usr/sbin/readelf"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -1033,8 +910,8 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -1057,8 +934,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/sbin/dlltool"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/dlltool"
       - "/usr/local/sbin/dlltool"
       - "/usr/local/bin/dlltool"
@@ -1082,8 +959,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -1126,8 +1003,8 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -1151,8 +1028,8 @@ events:
     found: "/usr/sbin/addr2line"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -1195,8 +1072,8 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -1219,8 +1096,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/sbin/tapi"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/tapi"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/tapi"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/tapi"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
@@ -1244,8 +1121,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -1291,8 +1168,8 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -1315,8 +1192,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/sbin/gcc-ar-15.2"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
@@ -1338,8 +1215,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ar-15.2"
       - "/usr/bin/core_perl/gcc-ar-15.2"
       - "/usr/sbin/gcc-ar-15"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ar-15"
       - "/usr/local/sbin/gcc-ar-15"
       - "/usr/local/bin/gcc-ar-15"
@@ -1361,8 +1238,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ar-15"
       - "/usr/bin/core_perl/gcc-ar-15"
       - "/usr/sbin/gcc-ar15"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ar15"
       - "/usr/local/sbin/gcc-ar15"
       - "/usr/local/bin/gcc-ar15"
@@ -1386,8 +1263,8 @@ events:
     found: "/usr/sbin/gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -1433,8 +1310,8 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -1457,8 +1334,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/sbin/gcc-ranlib-15.2"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
@@ -1480,8 +1357,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ranlib-15.2"
       - "/usr/bin/core_perl/gcc-ranlib-15.2"
       - "/usr/sbin/gcc-ranlib-15"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ranlib-15"
       - "/usr/local/sbin/gcc-ranlib-15"
       - "/usr/local/bin/gcc-ranlib-15"
@@ -1503,8 +1380,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ranlib-15"
       - "/usr/bin/core_perl/gcc-ranlib-15"
       - "/usr/sbin/gcc-ranlib15"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ranlib15"
       - "/usr/local/sbin/gcc-ranlib15"
       - "/usr/local/bin/gcc-ranlib15"
@@ -1528,8 +1405,8 @@ events:
     found: "/usr/sbin/gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -1560,8 +1437,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-a3R9Y8"
-      binary: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-a3R9Y8"
+      source: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-3hvjK7"
+      binary: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-3hvjK7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1571,13 +1448,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-a3R9Y8'
+        Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-3hvjK7'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_b6f81/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_b6f81.dir/build.make CMakeFiles/cmTC_b6f81.dir/build
-        make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-a3R9Y8'
-        Building CXX object CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/sbin/c++   -v -o CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_b6eb5/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_b6eb5.dir/build.make CMakeFiles/cmTC_b6eb5.dir/build
+        make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-3hvjK7'
+        Building CXX object CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/sbin/c++   -v -o CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/c++
         Target: x86_64-pc-linux-gnu
@@ -1585,8 +1462,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20251112 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6f81.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b6f81.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cct8MEbS.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6eb5.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b6eb5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccjBB22S.s
         GNU C++17 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20251112, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1603,14 +1480,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 4f062beaae229dc32234f13ba259a70e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6f81.dir/'
-         as -v --64 -o CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o /tmp/cct8MEbS.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6eb5.dir/'
+         as -v --64 -o CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjBB22S.s
         GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_b6f81
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_b6f81.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_b6eb5
+        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_b6eb5.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -1621,14 +1498,14 @@ events:
         gcc version 15.2.1 20251112 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6f81' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b6f81.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuiBEee.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6f81 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6eb5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b6eb5.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIVWb7h.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6eb5 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20251112
-        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuiBEee.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6f81 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIVWb7h.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6eb5 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6f81' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b6f81.'
-        /usr/sbin/c++  -v -Wl,-v CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b6f81
-        make[1]: Leaving directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-a3R9Y8'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6eb5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b6eb5.'
+        /usr/sbin/c++  -v -Wl,-v CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b6eb5
+        make[1]: Leaving directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-3hvjK7'
         
       exitCode: 0
   -
@@ -1669,13 +1546,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-a3R9Y8']
+        ignore line: [Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-3hvjK7']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_b6f81/fast]
-        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_b6f81.dir/build.make CMakeFiles/cmTC_b6f81.dir/build]
-        ignore line: [make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-a3R9Y8']
-        ignore line: [Building CXX object CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/sbin/c++   -v -o CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_b6eb5/fast]
+        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_b6eb5.dir/build.make CMakeFiles/cmTC_b6eb5.dir/build]
+        ignore line: [make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-3hvjK7']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/sbin/c++   -v -o CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1683,8 +1560,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20251112 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6f81.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b6f81.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cct8MEbS.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6eb5.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b6eb5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccjBB22S.s]
         ignore line: [GNU C++17 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20251112  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1701,14 +1578,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 4f062beaae229dc32234f13ba259a70e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6f81.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o /tmp/cct8MEbS.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6eb5.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjBB22S.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_b6f81]
-        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_b6f81.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_b6eb5]
+        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_b6eb5.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -1719,13 +1596,13 @@ events:
         ignore line: [gcc version 15.2.1 20251112 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6f81' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b6f81.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuiBEee.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6f81 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6eb5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b6eb5.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIVWb7h.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6eb5 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccuiBEee.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccIVWb7h.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1740,7 +1617,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_b6f81] ==> ignore
+          arg [cmTC_b6eb5] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -1752,7 +1629,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1763,7 +1640,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20251112]
-        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuiBEee.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6f81 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6f81.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIVWb7h.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6eb5 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6eb5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/sbin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1821,8 +1698,8 @@ events:
     found: "/usr/sbin/cc"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -1881,8 +1758,8 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -1962,8 +1839,8 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -2003,8 +1880,8 @@ events:
       - "/opt/"
     searched_directories:
       - "/usr/sbin/gcc-ar-15.2"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
@@ -2043,8 +1920,8 @@ events:
       - "/opt/sbin/gcc-ar-15.2"
       - "/opt/gcc-ar-15.2"
       - "/usr/sbin/gcc-ar-15"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ar-15"
       - "/usr/local/sbin/gcc-ar-15"
       - "/usr/local/bin/gcc-ar-15"
@@ -2083,8 +1960,8 @@ events:
       - "/opt/sbin/gcc-ar-15"
       - "/opt/gcc-ar-15"
       - "/usr/sbin/gcc-ar15"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ar15"
       - "/usr/local/sbin/gcc-ar15"
       - "/usr/local/bin/gcc-ar15"
@@ -2125,8 +2002,8 @@ events:
     found: "/usr/sbin/gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -2182,8 +2059,8 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/sbin/"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -2223,8 +2100,8 @@ events:
       - "/opt/"
     searched_directories:
       - "/usr/sbin/gcc-ranlib-15.2"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
@@ -2263,8 +2140,8 @@ events:
       - "/opt/sbin/gcc-ranlib-15.2"
       - "/opt/gcc-ranlib-15.2"
       - "/usr/sbin/gcc-ranlib-15"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ranlib-15"
       - "/usr/local/sbin/gcc-ranlib-15"
       - "/usr/local/bin/gcc-ranlib-15"
@@ -2303,8 +2180,8 @@ events:
       - "/opt/sbin/gcc-ranlib-15"
       - "/opt/gcc-ranlib-15"
       - "/usr/sbin/gcc-ranlib15"
-      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
       - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
       - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli/gcc-ranlib15"
       - "/usr/local/sbin/gcc-ranlib15"
       - "/usr/local/bin/gcc-ranlib15"
@@ -2345,8 +2222,8 @@ events:
     found: "/usr/sbin/gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -2387,8 +2264,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-vRcG1m"
-      binary: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-vRcG1m"
+      source: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-HKWWS1"
+      binary: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-HKWWS1"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -2397,13 +2274,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-vRcG1m'
+        Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-HKWWS1'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_bf19b/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_bf19b.dir/build.make CMakeFiles/cmTC_bf19b.dir/build
-        make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-vRcG1m'
-        Building C object CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o
-        /usr/sbin/cc   -v -o CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_2e2ff/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_2e2ff.dir/build.make CMakeFiles/cmTC_2e2ff.dir/build
+        make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-HKWWS1'
+        Building C object CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o
+        /usr/sbin/cc   -v -o CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/cc
         Target: x86_64-pc-linux-gnu
@@ -2411,8 +2288,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20251112 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bf19b.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bf19b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccZyva7k.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e2ff.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2e2ff.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccWgP6yM.s
         GNU C23 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20251112, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2426,14 +2303,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: e7e806b0d021308da32115a1780fef1e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bf19b.dir/'
-         as -v --64 -o CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o /tmp/ccZyva7k.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e2ff.dir/'
+         as -v --64 -o CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o /tmp/ccWgP6yM.s
         GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_bf19b
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_bf19b.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_2e2ff
+        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_2e2ff.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -2444,14 +2321,14 @@ events:
         gcc version 15.2.1 20251112 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bf19b' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bf19b.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccO1pnya.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bf19b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2e2ff' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2e2ff.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2yUCHE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2e2ff /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20251112
-        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccO1pnya.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bf19b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2yUCHE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2e2ff /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bf19b' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bf19b.'
-        /usr/sbin/cc  -v -Wl,-v CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o -o cmTC_bf19b
-        make[1]: Leaving directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-vRcG1m'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2e2ff' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2e2ff.'
+        /usr/sbin/cc  -v -Wl,-v CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o -o cmTC_2e2ff
+        make[1]: Leaving directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-HKWWS1'
         
       exitCode: 0
   -
@@ -2486,13 +2363,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-vRcG1m']
+        ignore line: [Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-HKWWS1']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_bf19b/fast]
-        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_bf19b.dir/build.make CMakeFiles/cmTC_bf19b.dir/build]
-        ignore line: [make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-vRcG1m']
-        ignore line: [Building C object CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/sbin/cc   -v -o CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_2e2ff/fast]
+        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_2e2ff.dir/build.make CMakeFiles/cmTC_2e2ff.dir/build]
+        ignore line: [make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-HKWWS1']
+        ignore line: [Building C object CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/sbin/cc   -v -o CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -2500,8 +2377,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20251112 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bf19b.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bf19b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccZyva7k.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e2ff.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2e2ff.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccWgP6yM.s]
         ignore line: [GNU C23 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20251112  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2515,14 +2392,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e7e806b0d021308da32115a1780fef1e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bf19b.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o /tmp/ccZyva7k.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e2ff.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o /tmp/ccWgP6yM.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_bf19b]
-        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_bf19b.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_2e2ff]
+        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_2e2ff.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -2533,13 +2410,13 @@ events:
         ignore line: [gcc version 15.2.1 20251112 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bf19b' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bf19b.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccO1pnya.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bf19b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2e2ff' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2e2ff.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2yUCHE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2e2ff /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccO1pnya.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc2yUCHE.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -2554,7 +2431,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_bf19b] ==> ignore
+          arg [cmTC_2e2ff] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -2566,7 +2443,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -2581,7 +2458,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20251112]
-        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccO1pnya.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bf19b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_bf19b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2yUCHE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2e2ff /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2e2ff.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'C': /usr/sbin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -2641,8 +2518,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -2686,8 +2563,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-852PnU"
-      binary: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-852PnU"
+      source: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-2kkN0r"
+      binary: "/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-2kkN0r"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -2696,707 +2573,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-852PnU'
+        Change Dir: '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-2kkN0r'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_d8948/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_d8948.dir/build.make CMakeFiles/cmTC_d8948.dir/build
-        make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-852PnU'
-        Building C object CMakeFiles/cmTC_d8948.dir/src.c.o
-        /usr/sbin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d8948.dir/src.c.o -c /root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-852PnU/src.c
-        Linking C executable cmTC_d8948
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_d8948.dir/link.txt --verbose=1
-        /usr/sbin/cc CMakeFiles/cmTC_d8948.dir/src.c.o -o cmTC_d8948
-        make[1]: Leaving directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-852PnU'
+        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_1d6b3/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_1d6b3.dir/build.make CMakeFiles/cmTC_1d6b3.dir/build
+        make[1]: Entering directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-2kkN0r'
+        Building C object CMakeFiles/cmTC_1d6b3.dir/src.c.o
+        /usr/sbin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1d6b3.dir/src.c.o -c /root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-2kkN0r/src.c
+        Linking C executable cmTC_1d6b3
+        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_1d6b3.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_1d6b3.dir/src.c.o -o cmTC_1d6b3
+        make[1]: Leaving directory '/root/atlas/Atlas/cpp/build/CMakeFiles/CMakeScratch/TryCompile-2kkN0r'
         
       exitCode: 0
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPython/Support.cmake:2190 (find_program)"
-      - "/usr/share/cmake/Modules/FindPython3.cmake:656 (include)"
-      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:250 (find_package)"
-      - "build/_deps/googletest-src/googletest/CMakeLists.txt:81 (include)"
-    mode: "program"
-    variable: "_Python3_EXECUTABLE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "python3.14mu"
-      - "python3.14m"
-      - "python3.14u"
-      - "python3.14"
-      - "python3.14dmu"
-      - "python3.14dm"
-      - "python3.14du"
-      - "python3.14d"
-      - "python3"
-      - "python"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/root/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/usr/lib/wsl/lib"
-        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "/mnt/c/WINDOWS/system32"
-        - "/mnt/c/WINDOWS"
-        - "/mnt/c/WINDOWS/System32/Wbem"
-        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
-        - "/mnt/c/WINDOWS/System32/OpenSSH/"
-        - "/mnt/c/Users/ciara/AppData/Local/Microsoft/WindowsApps"
-        - "/mnt/c/Users/ciara/AppData/Local/Programs/Microsoft VS Code/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
 ...

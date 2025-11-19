@@ -24,7 +24,7 @@ target_link_libraries(core PUBLIC utils)
 add_executable(atlas_engine
     src/main.cpp          # only main.cpp here
 )
-target_link_libraries(atlas_engine PRIVATE core utils)
+target_link_libraries(atlas_engine PRIVATE core utils ${PROJECT_SOURCE_DIR}/include)
 
 # -------- Testing --------
 enable_testing()
