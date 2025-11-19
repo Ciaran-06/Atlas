@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-test:
+    name: Build & Test (C++ + Julia)
+    runs-on: ubuntu-latest
+
+    steps:
+      # --- Checkout repository ---
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # --- Install C++ dependencies ---
+      - name: Install C++ build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential cmake ninja-build clang clang-tidy cppcheck
+
+      # --- Configure CMake ---
+      - name: Configure CMake
+        run: |
+          cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release .
+
+      # --- Build C++ code ---
+      - name: Build project
+        run: cmake --build build --config Release
+
+      # --- Run C++ unit tests ---
+      - name: Run C++ tests
+        run: ctest --test-dir build --output-on-failure
+
+      # --- Static Analysis: Clang-Tidy ---
+      - name: Run clang-tidy
+        run: |
+          echo "Running clang-tidy..."
+          clang-tidy --version
+          # Adjust this to match your source files:
+          clang-tidy src/**/*.cpp -- -I./src || true
+
+      # --- Static Analysis: Cppcheck ---
+      - name: Run cppcheck
+        run: |
+          echo "Running cppcheck..."
+          cppcheck --enable=all --suppress=missingIncludeSystem src/ || true
+
+      # --- Install Julia ---
+      - name: Install Julia
+        uses: julia-actions/setup-julia@v2
+        with:
+          version: "1.11"   # or latest stable
+
+      # --- Install Julia dependencies ---
+      - name: Install Julia packages
+        run: |
+          julia -e '
+            using Pkg;
+            Pkg.instantiate();
+            Pkg.build();
+          '
+
+      # --- Run Julia tests ---
+      - name: Run Julia tests
+        run: |
+          julia --check-bounds=yes -e '
+            using Pkg;
+            Pkg.test();
+          '
