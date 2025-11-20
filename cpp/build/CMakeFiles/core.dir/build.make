@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/sbin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/sbin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/atlas/Atlas/cpp
+CMAKE_SOURCE_DIR = /Users/ciarangaffney/Atlas/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/atlas/Atlas/cpp/build
+CMAKE_BINARY_DIR = /Users/ciarangaffney/Atlas/cpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/core.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/core.dir/codegen:
 .PHONY : CMakeFiles/core.dir/codegen
 
 CMakeFiles/core.dir/src/Engine.cpp.o: CMakeFiles/core.dir/flags.make
-CMakeFiles/core.dir/src/Engine.cpp.o: /root/atlas/Atlas/cpp/src/Engine.cpp
+CMakeFiles/core.dir/src/Engine.cpp.o: /Users/ciarangaffney/Atlas/cpp/src/Engine.cpp
 CMakeFiles/core.dir/src/Engine.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/core.dir/src/Engine.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/Engine.cpp.o -MF CMakeFiles/core.dir/src/Engine.cpp.o.d -o CMakeFiles/core.dir/src/Engine.cpp.o -c /root/atlas/Atlas/cpp/src/Engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/core.dir/src/Engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/Engine.cpp.o -MF CMakeFiles/core.dir/src/Engine.cpp.o.d -o CMakeFiles/core.dir/src/Engine.cpp.o -c /Users/ciarangaffney/Atlas/cpp/src/Engine.cpp
 
 CMakeFiles/core.dir/src/Engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/core.dir/src/Engine.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/atlas/Atlas/cpp/src/Engine.cpp > CMakeFiles/core.dir/src/Engine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/Atlas/cpp/src/Engine.cpp > CMakeFiles/core.dir/src/Engine.cpp.i
 
 CMakeFiles/core.dir/src/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/Engine.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/atlas/Atlas/cpp/src/Engine.cpp -o CMakeFiles/core.dir/src/Engine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/Atlas/cpp/src/Engine.cpp -o CMakeFiles/core.dir/src/Engine.cpp.s
 
 # Object files for target core
 core_OBJECTS = \
@@ -96,7 +96,7 @@ core_EXTERNAL_OBJECTS =
 libcore.a: CMakeFiles/core.dir/src/Engine.cpp.o
 libcore.a: CMakeFiles/core.dir/build.make
 libcore.a: CMakeFiles/core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/core.dir/clean:
 .PHONY : CMakeFiles/core.dir/clean
 
 CMakeFiles/core.dir/depend:
-	cd /root/atlas/Atlas/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/atlas/Atlas/cpp /root/atlas/Atlas/cpp /root/atlas/Atlas/cpp/build /root/atlas/Atlas/cpp/build /root/atlas/Atlas/cpp/build/CMakeFiles/core.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ciarangaffney/Atlas/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ciarangaffney/Atlas/cpp /Users/ciarangaffney/Atlas/cpp /Users/ciarangaffney/Atlas/cpp/build /Users/ciarangaffney/Atlas/cpp/build /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles/core.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/core.dir/depend
 

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /root/atlas/Atlas/cpp
-# Build directory: /root/atlas/Atlas/cpp/build
+# Source directory: /Users/ciarangaffney/Atlas/cpp
+# Build directory: /Users/ciarangaffney/Atlas/cpp/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

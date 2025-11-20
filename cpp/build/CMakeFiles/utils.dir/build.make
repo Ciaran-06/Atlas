@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/sbin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/sbin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/atlas/Atlas/cpp
+CMAKE_SOURCE_DIR = /Users/ciarangaffney/Atlas/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/atlas/Atlas/cpp/build
+CMAKE_BINARY_DIR = /Users/ciarangaffney/Atlas/cpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/utils.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/utils.dir/codegen:
 .PHONY : CMakeFiles/utils.dir/codegen
 
 CMakeFiles/utils.dir/src/Statistics.cpp.o: CMakeFiles/utils.dir/flags.make
-CMakeFiles/utils.dir/src/Statistics.cpp.o: /root/atlas/Atlas/cpp/src/Statistics.cpp
+CMakeFiles/utils.dir/src/Statistics.cpp.o: /Users/ciarangaffney/Atlas/cpp/src/Statistics.cpp
 CMakeFiles/utils.dir/src/Statistics.cpp.o: CMakeFiles/utils.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/utils.dir/src/Statistics.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utils.dir/src/Statistics.cpp.o -MF CMakeFiles/utils.dir/src/Statistics.cpp.o.d -o CMakeFiles/utils.dir/src/Statistics.cpp.o -c /root/atlas/Atlas/cpp/src/Statistics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/utils.dir/src/Statistics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utils.dir/src/Statistics.cpp.o -MF CMakeFiles/utils.dir/src/Statistics.cpp.o.d -o CMakeFiles/utils.dir/src/Statistics.cpp.o -c /Users/ciarangaffney/Atlas/cpp/src/Statistics.cpp
 
 CMakeFiles/utils.dir/src/Statistics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/utils.dir/src/Statistics.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/atlas/Atlas/cpp/src/Statistics.cpp > CMakeFiles/utils.dir/src/Statistics.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/Atlas/cpp/src/Statistics.cpp > CMakeFiles/utils.dir/src/Statistics.cpp.i
 
 CMakeFiles/utils.dir/src/Statistics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/src/Statistics.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/atlas/Atlas/cpp/src/Statistics.cpp -o CMakeFiles/utils.dir/src/Statistics.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/Atlas/cpp/src/Statistics.cpp -o CMakeFiles/utils.dir/src/Statistics.cpp.s
 
 CMakeFiles/utils.dir/src/FileLoader.cpp.o: CMakeFiles/utils.dir/flags.make
-CMakeFiles/utils.dir/src/FileLoader.cpp.o: /root/atlas/Atlas/cpp/src/FileLoader.cpp
+CMakeFiles/utils.dir/src/FileLoader.cpp.o: /Users/ciarangaffney/Atlas/cpp/src/FileLoader.cpp
 CMakeFiles/utils.dir/src/FileLoader.cpp.o: CMakeFiles/utils.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/utils.dir/src/FileLoader.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utils.dir/src/FileLoader.cpp.o -MF CMakeFiles/utils.dir/src/FileLoader.cpp.o.d -o CMakeFiles/utils.dir/src/FileLoader.cpp.o -c /root/atlas/Atlas/cpp/src/FileLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/utils.dir/src/FileLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utils.dir/src/FileLoader.cpp.o -MF CMakeFiles/utils.dir/src/FileLoader.cpp.o.d -o CMakeFiles/utils.dir/src/FileLoader.cpp.o -c /Users/ciarangaffney/Atlas/cpp/src/FileLoader.cpp
 
 CMakeFiles/utils.dir/src/FileLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/utils.dir/src/FileLoader.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/atlas/Atlas/cpp/src/FileLoader.cpp > CMakeFiles/utils.dir/src/FileLoader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/Atlas/cpp/src/FileLoader.cpp > CMakeFiles/utils.dir/src/FileLoader.cpp.i
 
 CMakeFiles/utils.dir/src/FileLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/src/FileLoader.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/atlas/Atlas/cpp/src/FileLoader.cpp -o CMakeFiles/utils.dir/src/FileLoader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/Atlas/cpp/src/FileLoader.cpp -o CMakeFiles/utils.dir/src/FileLoader.cpp.s
 
 # Object files for target utils
 utils_OBJECTS = \
@@ -112,7 +112,7 @@ libutils.a: CMakeFiles/utils.dir/src/Statistics.cpp.o
 libutils.a: CMakeFiles/utils.dir/src/FileLoader.cpp.o
 libutils.a: CMakeFiles/utils.dir/build.make
 libutils.a: CMakeFiles/utils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/atlas/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libutils.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libutils.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/utils.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utils.dir/link.txt --verbose=$(VERBOSE)
 
@@ -125,6 +125,6 @@ CMakeFiles/utils.dir/clean:
 .PHONY : CMakeFiles/utils.dir/clean
 
 CMakeFiles/utils.dir/depend:
-	cd /root/atlas/Atlas/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/atlas/Atlas/cpp /root/atlas/Atlas/cpp /root/atlas/Atlas/cpp/build /root/atlas/Atlas/cpp/build /root/atlas/Atlas/cpp/build/CMakeFiles/utils.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ciarangaffney/Atlas/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ciarangaffney/Atlas/cpp /Users/ciarangaffney/Atlas/cpp /Users/ciarangaffney/Atlas/cpp/build /Users/ciarangaffney/Atlas/cpp/build /Users/ciarangaffney/Atlas/cpp/build/CMakeFiles/utils.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/utils.dir/depend
 

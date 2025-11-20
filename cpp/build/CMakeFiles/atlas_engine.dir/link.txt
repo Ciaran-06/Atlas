@@ -1,1 +1,1 @@
-/usr/sbin/c++ -Wl,--dependency-file=CMakeFiles/atlas_engine.dir/link.d CMakeFiles/atlas_engine.dir/src/main.cpp.o -o atlas_engine  libcore.a libutils.a
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/atlas_engine.dir/src/main.cpp.o -o atlas_engine  libcore.a libutils.a

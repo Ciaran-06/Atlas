@@ -1,2 +1,2 @@
-/usr/sbin/ar qc libutils.a CMakeFiles/utils.dir/src/Statistics.cpp.o CMakeFiles/utils.dir/src/FileLoader.cpp.o
-/usr/sbin/ranlib libutils.a
+/usr/bin/ar qc libutils.a CMakeFiles/utils.dir/src/Statistics.cpp.o CMakeFiles/utils.dir/src/FileLoader.cpp.o
+/usr/bin/ranlib libutils.a
