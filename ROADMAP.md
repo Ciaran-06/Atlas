@@ -224,12 +224,3 @@ Upon completing this roadmap, ATLAS will have:
 This is the kind of system that stands out to firms like **Renaissance Technologies, Two Sigma, DE Shaw, Jane Street, Citadel** and more.
 
 ---
-
-If you'd like, I can also generate:
-
-✔ `CONTRIBUTING.md`
-✔ `PROJECT_STRUCTURE.md`
-✔ architecture diagrams
-✔ a full code scaffold for all three languages
-
-Just tell me what you want.
