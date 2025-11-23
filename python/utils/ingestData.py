@@ -1,71 +1,86 @@
 import os
 from pathlib import Path
-import pandas as pd # type: ignore
+import pandas as pd # type : ignore
 from datetime import datetime
 import sys
 import time
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 RAW_DIR = Path("../../data/raw")
 OUT_DIR = Path("../../data/processed")
 
+
 # ------------------------------
-# Progress bar helper
+# PROGRESS BAR
 # ------------------------------
-def progress_bar(current, total, bar_length=40):
-    fraction = current / total
-    filled = int(bar_length * fraction)
-    bar = "█" * filled + '-' * (bar_length - filled)
-    percent = int(fraction * 100)
-    sys.stdout.write(f"\r|{bar}| {percent}% ({current}/{total})")
+def progress_bar(current, total, bar_len=40):
+    frac = current / total
+    filled = int(bar_len * frac)
+    bar = "█" * filled + "-" * (bar_len - filled)
+    percent = int(frac * 100)
+    sys.stdout.write(f"\r|{bar}| {percent}%  ({current}/{total})")
     sys.stdout.flush()
 
+
 # ------------------------------
-# MAIN PROCESSING
+# WORKER FUNCTION (runs in parallel)
 # ------------------------------
-def process():
-    print("Starting Data Ingestion + Ticker/Year Split...\n")
+def process_file(file_path):
+    file_path = Path(file_path)
+    df = pd.read_csv(file_path)
+
+    if "Ticker" not in df.columns or "Date" not in df.columns:
+        return f"❌ Skipped {file_path.name}: missing Ticker/Date columns"
+
+    # Convert Date
+    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+    df = df.dropna(subset=["Date"])
+
+    # Add Year column
+    df["Year"] = df["Date"].dt.year
+
+    # Process each ticker/year
+    for ticker, tdf in df.groupby("Ticker"):
+        ticker_folder = OUT_DIR / ticker
+        ticker_folder.mkdir(parents=True, exist_ok=True)
+
+        for year, ydf in tdf.groupby("Year"):
+            out_path = ticker_folder / f"{year}.parquet"
+            ydf.to_parquet(out_path, engine="pyarrow")
+
+    return f"Processed {file_path.name}"
+
+
+# ------------------------------
+# MAIN FUNCTION
+# ------------------------------
+def main():
+    print("Starting parallel parquet generation...\n")
 
     csv_files = list(RAW_DIR.glob("*.csv"))
+    total = len(csv_files)
 
-    if not csv_files:
+    if total == 0:
         print("No CSV files found.")
         return
 
-    total_files = len(csv_files)
+    # Parallel execution
+    results = []
+    completed = 0
 
-    for idx, file in enumerate(csv_files, 1):
-        print(f"\nProcessing {file.name}")
+    with ProcessPoolExecutor() as executor:
+        futures = {executor.submit(process_file, f): f for f in csv_files}
 
-        # Load file into pandas
-        df = pd.read_csv(file)
+        for future in as_completed(futures):
+            completed += 1
+            msg = future.result()
+            results.append(msg)
+            progress_bar(completed, total)
 
-        # Validate required columns
-        if "Ticker" not in df.columns or "Date" not in df.columns:
-            print(f"  ❌ Skipped {file.name}: missing Ticker or Date columns")
-            continue
-
-        # Convert Date → datetime
-        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-        df = df.dropna(subset=["Date"])
-
-        # Group by ticker
-        for ticker, ticker_df in df.groupby("Ticker"):
-            ticker_folder = OUT_DIR / ticker
-            ticker_folder.mkdir(parents=True, exist_ok=True)
-
-            # Group by year
-            ticker_df["Year"] = ticker_df["Date"].dt.year
-
-            for year, year_df in ticker_df.groupby("Year"):
-                out_path = ticker_folder / f"{year}.csv"
-                year_df.to_csv(out_path, index=False)
-
-        # Update progress bar
-        progress_bar(idx, total_files)
-        time.sleep(0.05)  # tiny delay so bar visibly updates
-
-    print("\n\n🎉 Done! All tickers split by year and saved.")
+    print("\n\n🎉 Done! All files processed into Parquet.")
+    for r in results:
+        print(" -", r)
 
 
 if __name__ == "__main__":
-    process()
+    main()
