@@ -1,0 +1,11 @@
+# Ignore raw & processed data
+data/
+*/data/
+*.csv
+*.parquet
+*.duckdb
+
+# Ignore big outputs
+*.zip
+*.tar
+*.gz

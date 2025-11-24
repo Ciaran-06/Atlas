@@ -17,7 +17,7 @@ bool pathExists(const std::string& path) {
 }
 
 std::string tickerFilePath(const std::string& ticker) {
-    std::string filePath = rawDataDir + "/" + ticker + ".csv"
+    std::string filePath = rawDataDir + "/" + ticker + ".csv";
 }
 
 std::string tickerTrimmer(std::string& ticker) {

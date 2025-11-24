@@ -1,85 +1,94 @@
 import os
 from pathlib import Path
-import pandas as pd # type : ignore
-from datetime import datetime
-import sys
-import time
+import polars as pl # type: ignore
 from concurrent.futures import ProcessPoolExecutor, as_completed
+from tqdm import tqdm # type: ignore
+import sys
+import logging
 
 RAW_DIR = Path("../../data/raw")
 OUT_DIR = Path("../../data/processed")
-
-
-# ------------------------------
-# PROGRESS BAR
-# ------------------------------
-def progress_bar(current, total, bar_len=40):
-    frac = current / total
-    filled = int(bar_len * frac)
-    bar = "█" * filled + "-" * (bar_len - filled)
-    percent = int(frac * 100)
-    sys.stdout.write(f"\r|{bar}| {percent}%  ({current}/{total})")
-    sys.stdout.flush()
-
-
-# ------------------------------
-# WORKER FUNCTION (runs in parallel)
-# ------------------------------
+LOG_DIR = Path("../../data/logs/ingest.log")
+# ----------------------------------------
+# Logging Setup
+# ----------------------------------------
+logging.basicConfig(
+    filename=LOG_DIR,
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
+# ----------------------------------------
+# PROCESS ONE FILE (Runs in parallel)
+# ----------------------------------------
 def process_file(file_path):
     file_path = Path(file_path)
-    df = pd.read_csv(file_path)
 
-    if "Ticker" not in df.columns or "Date" not in df.columns:
-        return f"❌ Skipped {file_path.name}: missing Ticker/Date columns"
+    try:
+        ticker = file_path.stem.upper()
 
-    # Convert Date
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-    df = df.dropna(subset=["Date"])
+        # Read CSV using Polars (FAST)
+        df = pl.read_csv(
+            file_path,
+            try_parse_dates=True,
+            dtypes={"Date": pl.Date},
+        )
 
-    # Add Year column
-    df["Year"] = df["Date"].dt.year
+        if "Date" not in df.columns:
+            return f"❌ {ticker}: No Date column"
 
-    # Process each ticker/year
-    for ticker, tdf in df.groupby("Ticker"):
-        ticker_folder = OUT_DIR / ticker
-        ticker_folder.mkdir(parents=True, exist_ok=True)
+        # Add missing ticker column
+        df = df.with_columns(pl.lit(ticker).alias("Ticker"))
 
-        for year, ydf in tdf.groupby("Year"):
-            out_path = ticker_folder / f"{year}.parquet"
-            ydf.to_parquet(out_path, engine="pyarrow")
+        # Extract year
+        df = df.with_columns(
+            pl.col("Date").dt.year().alias("Year")
+        )
 
-    return f"Processed {file_path.name}"
+        # Output directory for this ticker
+        ticker_dir = OUT_DIR / ticker.split(".")[0]
+        ticker_dir.mkdir(parents=True, exist_ok=True)
+
+        # Split by year and save fast Parquet files
+        for year, ydf in df.group_by("Year"):
+            year = year[0]
+            out_file = ticker_dir / f"{year}.parquet"
+            ydf.write_parquet(out_file)
+
+        return f"✅ Processed {ticker}"
+
+    except Exception as e:
+        return f"❌ ERROR {file_path.name}: {e}"
 
 
-# ------------------------------
-# MAIN FUNCTION
-# ------------------------------
+# ----------------------------------------
+# MAIN PIPELINE
+# ----------------------------------------
 def main():
-    print("Starting parallel parquet generation...\n")
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     csv_files = list(RAW_DIR.glob("*.csv"))
     total = len(csv_files)
 
     if total == 0:
         print("No CSV files found.")
-        return
+        sys.exit(1)
 
-    # Parallel execution
+    print(f"🚀 Starting processing of {total} files...\n")
+
     results = []
-    completed = 0
 
+    # Use all CPU cores for max speed
     with ProcessPoolExecutor() as executor:
         futures = {executor.submit(process_file, f): f for f in csv_files}
 
-        for future in as_completed(futures):
-            completed += 1
+        for future in tqdm(as_completed(futures), total=total, desc="Progress"):
             msg = future.result()
             results.append(msg)
-            progress_bar(completed, total)
+            logging.info(msg)
 
-    print("\n\n🎉 Done! All files processed into Parquet.")
+    print("\n🎉 DONE — All files processed!\n")
     for r in results:
-        print(" -", r)
+        print(r)
 
 
 if __name__ == "__main__":
