@@ -9,3 +9,5 @@ data/
 *.zip
 *.tar
 *.gz
+
+./cpp/include
