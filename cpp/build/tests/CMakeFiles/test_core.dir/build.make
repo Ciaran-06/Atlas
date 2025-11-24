@@ -99,6 +99,7 @@ tests/test_core: lib/libgtest_main.a
 tests/test_core: libcore.a
 tests/test_core: libutils.a
 tests/test_core: lib/libgtest.a
+tests/test_core: /Users/ciarangaffney/Atlas/cpp/include/duckdb/include/libduckdb.dylib
 tests/test_core: tests/CMakeFiles/test_core.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_core"
 	cd /Users/ciarangaffney/Atlas/cpp/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_core.dir/link.txt --verbose=$(VERBOSE)

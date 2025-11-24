@@ -86,33 +86,17 @@ CMakeFiles/utils.dir/src/Statistics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/src/Statistics.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/Atlas/cpp/src/Statistics.cpp -o CMakeFiles/utils.dir/src/Statistics.cpp.s
 
-CMakeFiles/utils.dir/src/FileLoader.cpp.o: CMakeFiles/utils.dir/flags.make
-CMakeFiles/utils.dir/src/FileLoader.cpp.o: /Users/ciarangaffney/Atlas/cpp/src/FileLoader.cpp
-CMakeFiles/utils.dir/src/FileLoader.cpp.o: CMakeFiles/utils.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/utils.dir/src/FileLoader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utils.dir/src/FileLoader.cpp.o -MF CMakeFiles/utils.dir/src/FileLoader.cpp.o.d -o CMakeFiles/utils.dir/src/FileLoader.cpp.o -c /Users/ciarangaffney/Atlas/cpp/src/FileLoader.cpp
-
-CMakeFiles/utils.dir/src/FileLoader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/utils.dir/src/FileLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/Atlas/cpp/src/FileLoader.cpp > CMakeFiles/utils.dir/src/FileLoader.cpp.i
-
-CMakeFiles/utils.dir/src/FileLoader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/src/FileLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/Atlas/cpp/src/FileLoader.cpp -o CMakeFiles/utils.dir/src/FileLoader.cpp.s
-
 # Object files for target utils
 utils_OBJECTS = \
-"CMakeFiles/utils.dir/src/Statistics.cpp.o" \
-"CMakeFiles/utils.dir/src/FileLoader.cpp.o"
+"CMakeFiles/utils.dir/src/Statistics.cpp.o"
 
 # External object files for target utils
 utils_EXTERNAL_OBJECTS =
 
 libutils.a: CMakeFiles/utils.dir/src/Statistics.cpp.o
-libutils.a: CMakeFiles/utils.dir/src/FileLoader.cpp.o
 libutils.a: CMakeFiles/utils.dir/build.make
 libutils.a: CMakeFiles/utils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libutils.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libutils.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/utils.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utils.dir/link.txt --verbose=$(VERBOSE)
 

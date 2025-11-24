@@ -97,6 +97,7 @@ atlas_engine: CMakeFiles/atlas_engine.dir/src/main.cpp.o
 atlas_engine: CMakeFiles/atlas_engine.dir/build.make
 atlas_engine: libcore.a
 atlas_engine: libutils.a
+atlas_engine: /Users/ciarangaffney/Atlas/cpp/include/duckdb/include/libduckdb.dylib
 atlas_engine: CMakeFiles/atlas_engine.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/Atlas/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable atlas_engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atlas_engine.dir/link.txt --verbose=$(VERBOSE)

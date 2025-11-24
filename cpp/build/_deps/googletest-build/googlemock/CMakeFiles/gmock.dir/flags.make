@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src/googlemock/include -I/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src/googlemock -isystem /Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src/googletest/include -isystem /Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/Users/ciarangaffney/Atlas/cpp/include/duckdb -I/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src/googlemock/include -I/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src/googlemock -isystem /Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src/googletest/include -isystem /Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src/googletest
 
 CXX_FLAGSarm64 = -std=c++20 -arch arm64  -DGTEST_HAS_PTHREAD=1  
 

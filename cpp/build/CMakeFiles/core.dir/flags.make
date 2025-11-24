@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ciarangaffney/Atlas/cpp/include
+CXX_INCLUDES = -I/Users/ciarangaffney/Atlas/cpp/include/duckdb -I/Users/ciarangaffney/Atlas/cpp/include
 
 CXX_FLAGSarm64 = -std=gnu++20 -arch arm64
 

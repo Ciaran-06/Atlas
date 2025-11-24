@@ -299,30 +299,6 @@ src/Engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/Engine.cpp.s
 .PHONY : src/Engine.cpp.s
 
-src/FileLoader.o: src/FileLoader.cpp.o
-.PHONY : src/FileLoader.o
-
-# target to build an object file
-src/FileLoader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/FileLoader.cpp.o
-.PHONY : src/FileLoader.cpp.o
-
-src/FileLoader.i: src/FileLoader.cpp.i
-.PHONY : src/FileLoader.i
-
-# target to preprocess a source file
-src/FileLoader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/FileLoader.cpp.i
-.PHONY : src/FileLoader.cpp.i
-
-src/FileLoader.s: src/FileLoader.cpp.s
-.PHONY : src/FileLoader.s
-
-# target to generate assembly for a file
-src/FileLoader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/FileLoader.cpp.s
-.PHONY : src/FileLoader.cpp.s
-
 src/Statistics.o: src/Statistics.cpp.o
 .PHONY : src/Statistics.o
 
@@ -346,6 +322,30 @@ src/Statistics.s: src/Statistics.cpp.s
 src/Statistics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/Statistics.cpp.s
 .PHONY : src/Statistics.cpp.s
+
+src/duckdb_loader.o: src/duckdb_loader.cpp.o
+.PHONY : src/duckdb_loader.o
+
+# target to build an object file
+src/duckdb_loader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/duckdb_loader.cpp.o
+.PHONY : src/duckdb_loader.cpp.o
+
+src/duckdb_loader.i: src/duckdb_loader.cpp.i
+.PHONY : src/duckdb_loader.i
+
+# target to preprocess a source file
+src/duckdb_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/duckdb_loader.cpp.i
+.PHONY : src/duckdb_loader.cpp.i
+
+src/duckdb_loader.s: src/duckdb_loader.cpp.s
+.PHONY : src/duckdb_loader.s
+
+# target to generate assembly for a file
+src/duckdb_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/duckdb_loader.cpp.s
+.PHONY : src/duckdb_loader.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -395,12 +395,12 @@ help:
 	@echo "... src/Engine.o"
 	@echo "... src/Engine.i"
 	@echo "... src/Engine.s"
-	@echo "... src/FileLoader.o"
-	@echo "... src/FileLoader.i"
-	@echo "... src/FileLoader.s"
 	@echo "... src/Statistics.o"
 	@echo "... src/Statistics.i"
 	@echo "... src/Statistics.s"
+	@echo "... src/duckdb_loader.o"
+	@echo "... src/duckdb_loader.i"
+	@echo "... src/duckdb_loader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.rmd": "markdown",
         "any": "cpp",
         "array": "cpp",
         "atomic": "cpp",
@@ -70,7 +71,17 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "codecvt": "cpp"
+        "codecvt": "cpp",
+        "__bit_reference": "cpp",
+        "__locale": "cpp",
+        "__threading_support": "cpp",
+        "__verbose_abort": "cpp",
+        "bitset": "cpp",
+        "ios": "cpp",
+        "locale": "cpp",
+        "__config": "cpp",
+        "complex": "cpp",
+        "execution": "cpp"
     },
     "editor.tokenColorCustomizations": {
         "[*Light*]": {
@@ -113,5 +124,6 @@
                 }
             }
         ]
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }

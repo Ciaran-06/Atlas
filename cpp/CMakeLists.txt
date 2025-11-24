@@ -4,28 +4,34 @@ project(AtlasCPP LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# -------- Libraries --------
+# --- DuckDB include + library ---
+# Headers in your project
+set(DUCKDB_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include/duckdb")
 
-# Utils library
+# Set this to the actual path of libduckdb.dylib on your system
+set(DUCKDB_LIBRARY "${PROJECT_SOURCE_DIR}/include/duckdb/include/libduckdb.dylib")
+
+include_directories(${DUCKDB_INCLUDE_DIR})
+
+# --- Utils ---
 add_library(utils
     src/Statistics.cpp
-    src/FileLoader.cpp
 )
 target_include_directories(utils PUBLIC include)
 
-# Core library (Engine logic)
+# --- Core ---
 add_library(core
-    src/Engine.cpp        # <-- must include Engine.cpp
+    src/Engine.cpp
+    src/duckdb_loader.cpp
 )
+
 target_include_directories(core PUBLIC include)
-target_link_libraries(core PUBLIC utils)
+target_link_libraries(core PUBLIC utils ${DUCKDB_LIBRARY})
 
-# -------- Executable --------
-add_executable(atlas_engine
-    src/main.cpp          # only main.cpp here
-)
-target_link_libraries(atlas_engine PRIVATE core utils ${PROJECT_SOURCE_DIR}/include)
+# --- Executable ---
+add_executable(atlas_engine src/main.cpp)
+target_link_libraries(atlas_engine PRIVATE core utils)
 
-# -------- Testing --------
+# --- Tests ---
 enable_testing()
 add_subdirectory(tests)
