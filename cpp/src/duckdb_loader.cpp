@@ -1,7 +1,8 @@
 #include "duckdb_loader.hpp"
-#include "duckdb/include/duckdb.hpp"
+
+
+const std::string dbPath  = "../data/duckdb/main.db";
 
 DuckDBLoader::DuckDBLoader(const std::string& db_Path) {
-dbPath = db_Path;
-duckdb::DuckDB db(dbPath);
+    std::cout << "DuckDBLoader initialized with DB path: " << db_Path << std::endl;
 }
