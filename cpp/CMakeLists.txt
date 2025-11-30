@@ -1,37 +1,42 @@
+# ...existing code...
 cmake_minimum_required(VERSION 3.20)
 project(AtlasCPP LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# --- DuckDB include + library ---
-# Headers in your project
-set(DUCKDB_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include/duckdb")
+# --- DuckDB include + optional library ---
+set(DUCKDB_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/duckdb" CACHE PATH "Path to DuckDB headers (duckdb.hpp)")
+set(DUCKDB_LIBRARY "" CACHE PATH "Optional: path to libduckdb (.so/.a/.lib)")
 
-# Set this to the actual path of libduckdb.dylib on your system
-set(DUCKDB_LIBRARY "${PROJECT_SOURCE_DIR}/include/duckdb/include/libduckdb.dylib")
+# --- Arrow include + optional library ---
+find_package(Arrow REQUIRED)
 
-include_directories(${DUCKDB_INCLUDE_DIR})
+message(STATUS "DuckDB include dir: ${DUCKDB_INCLUDE_DIR}")
 
 # --- Utils ---
 add_library(utils
     src/Statistics.cpp
+    include/duckdb/duckdb.cpp
 )
-target_include_directories(utils PUBLIC include)
+# ensure project headers and duckdb headers are visible when building utils
+target_include_directories(utils PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include ${DUCKDB_INCLUDE_DIR})
 
 # --- Core ---
 add_library(core
     src/Engine.cpp
     src/duckdb_loader.cpp
 )
-
-target_include_directories(core PUBLIC include)
+# ensure core can see the same headers
+target_include_directories(core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include ${DUCKDB_INCLUDE_DIR})
 target_link_libraries(core PUBLIC utils ${DUCKDB_LIBRARY})
 
 # --- Executable ---
 add_executable(atlas_engine src/main.cpp)
-target_link_libraries(atlas_engine PRIVATE core utils)
+target_include_directories(atlas_engine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include ${DUCKDB_INCLUDE_DIR})
+target_link_libraries(atlas_engine PRIVATE core utils Arrow::arrow_shared)
 
 # --- Tests ---
 enable_testing()
 add_subdirectory(tests)
+# ...existing code...
