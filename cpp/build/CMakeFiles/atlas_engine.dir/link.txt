@@ -1,1 +1,0 @@
-/usr/sbin/c++ -Wl,--dependency-file=CMakeFiles/atlas_engine.dir/link.d CMakeFiles/atlas_engine.dir/src/main.cpp.o -o atlas_engine  libcore.a libutils.a /usr/lib/libarrow.so.2200.0.0 -ldl -lrt

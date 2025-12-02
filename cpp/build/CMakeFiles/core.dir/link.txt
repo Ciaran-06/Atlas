@@ -1,2 +1,0 @@
-/usr/sbin/ar qc libcore.a CMakeFiles/core.dir/src/Engine.cpp.o CMakeFiles/core.dir/src/duckdb_loader.cpp.o
-/usr/sbin/ranlib libcore.a

@@ -1,2 +1,0 @@
-/usr/sbin/ar qc libutils.a CMakeFiles/utils.dir/src/Statistics.cpp.o CMakeFiles/utils.dir/include/duckdb/duckdb.cpp.o
-/usr/sbin/ranlib libutils.a
