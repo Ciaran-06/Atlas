@@ -3,7 +3,14 @@ data/
 */data/
 *.csv
 *.parquet
-*.duckdb
+
+# Allow tracked datasets and DBs
+!data/duckdb/**
+!data/samples/**
+!data/samples/**/*.csv
+!data/samples/**/*.parquet
+!data/duckdb/**/*.duckdb
+!data/duckdb/**/*.db
 
 # Ignore big outputs
 *.zip
