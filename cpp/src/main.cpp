@@ -8,7 +8,7 @@ int main() {
     engine.run();
 
     DuckDBLoader loader("../../data/duckdb/main.db");
-    
+    std::cout << "Tests";
 
     return 0;
 }
