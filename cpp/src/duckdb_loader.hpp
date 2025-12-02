@@ -6,8 +6,8 @@
 
 class DuckDBLoader {
     private:
-    duckdb::DuckDB db;
-    duckdb::Connection conn{ db};
+    std::unique_ptr<duckdb::DuckDB> db;
+    std::unique_ptr<duckdb::Connection> conn;
     std::string dbPath;
     public:
         DuckDBLoader(const std::string& db_Path);
