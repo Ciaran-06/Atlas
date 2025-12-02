@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src")
-  file(MAKE_DIRECTORY "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src")
+if(NOT EXISTS "/root/atlas/Atlas/cpp/build/_deps/googletest-src")
+  file(MAKE_DIRECTORY "/root/atlas/Atlas/cpp/build/_deps/googletest-src")
 endif()
 file(MAKE_DIRECTORY
-  "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-build"
-  "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/root/atlas/Atlas/cpp/build/_deps/googletest-build"
+  "/root/atlas/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "/root/atlas/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "/root/atlas/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/root/atlas/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "/root/atlas/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/root/atlas/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/root/atlas/Atlas/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

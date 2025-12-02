@@ -7,7 +7,7 @@ int main() {
     Engine engine;
     engine.run();
 
-    DuckDBLoader loader("../data/duckdb/main.db");
+    DuckDBLoader loader("../../data/duckdb/main.db");
     
 
     return 0;

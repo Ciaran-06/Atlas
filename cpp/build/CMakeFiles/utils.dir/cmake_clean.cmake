@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/utils.dir/include/duckdb/duckdb.cpp.o"
+  "CMakeFiles/utils.dir/include/duckdb/duckdb.cpp.o.d"
   "CMakeFiles/utils.dir/src/Statistics.cpp.o"
   "CMakeFiles/utils.dir/src/Statistics.cpp.o.d"
   "libutils.a"

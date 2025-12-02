@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-src
-# Build directory: /Users/ciarangaffney/Atlas/cpp/build/_deps/googletest-build
+# Source directory: /root/atlas/Atlas/cpp/build/_deps/googletest-src
+# Build directory: /root/atlas/Atlas/cpp/build/_deps/googletest-build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
